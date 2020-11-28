@@ -1,0 +1,30 @@
+{
+  "dependencies": {},
+  "parameters": {
+    "Mgahed.resourceGroupName": {
+      "Name": "Mgahed.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "DefaultResourceGroup-DEWC"
+    },
+    "Mgahed.resourceGroupLocation": {
+      "Name": "Mgahed.resourceGroupLocation",
+      "Type": null,
+      "Value": "germanywestcentral"
+    },
+    "Mgahed.resourceName": {
+      "Name": "Mgahed.resourceName",
+      "Type": null,
+      "Value": "Mgahed"
+    },
+    "Mgahed.subscriptionId": {
+      "Name": "Mgahed.subscriptionId",
+      "Type": "subscription",
+      "Value": "5789f41f-e651-49b2-a5f5-71afec06951d"
+    },
+    "subscriptionId": {
+      "Name": "subscriptionId",
+      "Type": "subscription",
+      "Value": "5789f41f-e651-49b2-a5f5-71afec06951d"
+    }
+  }
+}

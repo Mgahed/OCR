@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container">
+    <h1>File Upload</h1>
+    @using (Html.BeginForm("submit", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div class="input-group row">
+            <span class="input-group-addon" id="basic-addon1">Upload Image</span>
+            <input type="file" class="form-control" aria-describedby="basic-addon1" name="file" />
+        </div>
+        <hr/>
+        <div class="row">
+            <p>Choose Language</p>
+        </div>
+        <div class="row">
+            <div class="col-md-1">
+                <input type="radio" id="eng" name="lang" value="eng" checked>
+                <label for="eng">English</label>
+            </div>
+            <div class="col-md-1">
+                <input type="radio" id="ara" name="lang" value="ara">
+                <label for="ara">Arabic</label>
+            </div>
+        </div>
+        <br />
+        <input type="submit" class="btn btn-primary" value="Upload Image" name="submit" />
+    }
+
+
+    @if (ViewBag.Result)
+    {
+
+        <h3>Results</h3>
+        <div class="form-group">
+            <label>Mean Confidence</label>
+            <label>@ViewBag.mean</label>
+        </div>
+        <div class="form-group" style="width: 100%">
+            <label>Result</label>
+            <textarea class="form-control" readonly rows="10">@ViewBag.res</textarea>
+        </div>
+
+    }
+
+</div>
